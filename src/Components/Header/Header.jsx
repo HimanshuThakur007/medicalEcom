@@ -5,7 +5,7 @@ const Header = () => {
     <React.Fragment>
               {/* <!-- =====  HEADER START  ===== --> */}
       <header id="header" className="section">
-        <div className="container">
+        <div className="container-fluid">
           <div className="header-top py-1">
             <div className="row align-items-center">
               <div className="col-md-6">
@@ -60,12 +60,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="header section pt-15 pb-15">
-          <div className="container">
+        <div className="header section pt-15 pb-15" style={{background:'#029255',color:"#fff"}}>
+          <div className="container-fluid">
             <div className="row">
               <div className="navbar-header col-2 header-bottom-left">
-                <a className="navbar-brand" href="index.html">
-                  <img alt="Bigmarket" src="images/logo.png" />
+                <a className="navbar-brand" to="/">
+                  {/* <img alt="Bigmarket" src="images/logo.png" /> */}
                 </a>
               </div>
               <div className="col-10 header-bottom-right">
@@ -345,8 +345,9 @@ const Header = () => {
                     </div>
                   </nav>
                 </div>
+                
                 <div className="header-link-search">
-                  <div className="header-search">
+                  {/* <div className="header-search">
                     <div className="actions">
                       <button
                         type="submit"
@@ -371,13 +372,13 @@ const Header = () => {
                         </button>
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="header-link">
                     <ul className="list-unstyled">
-                      <li><a href="#">Bm offers</a></li>
-                      <li><a href="#">Bm express</a></li>
-                      <li><a href="#">Bm speciality</a></li>
-                      <li><a href="#">Bm store</a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      {/* <li><a href="#"></a></li> */}
                     </ul>
                   </div>
                 </div>

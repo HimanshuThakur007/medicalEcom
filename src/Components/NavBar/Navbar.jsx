@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <nav id="top">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <span className="responsive-bar"><i className="fa fa-bars"></i></span>
             <div className="header-middle-outer closetoggle">

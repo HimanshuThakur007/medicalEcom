@@ -7,6 +7,7 @@ import Header from "./Components/Header/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeComp from "./Components/HomePage/HomeComp";
 import Layout from "./Components/Layout/Layout";
+import AboutComp from "./Components/About/AboutComp";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomeComp />} />
+            <Route path="/about" element={<AboutComp />} />
           </Route>
         </Routes>
       </BrowserRouter>

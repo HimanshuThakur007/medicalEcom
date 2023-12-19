@@ -2,12 +2,16 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import CategoryCard from "../ReuseableComp/CategoryCard";
 import StoreCard from "../ReuseableComp/StoreCard";
+import CrauselCard from "../ReuseableComp/CrauselCard";
+import BookOnline from "../BookOnline/BookOnline";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
 
 const HomePage = () => {
   return (
     <React.Fragment>
       <Banner />
-      <div className="container">
+      <CrauselCard/>
+      <div className="container-fluid">
         <div className="subbanner-section section mt-20">
           <div className="owl-carousel banner-carousel">
             <div className="home-subbanner">
@@ -69,7 +73,7 @@ const HomePage = () => {
         {/* <!-- =====  SUB BANNER END  ===== --> */}
 
         {/* <!-- =====  SEARVICES START  ===== --> */}
-        <div className="shipping-outer section">
+        {/* <div className="shipping-outer section">
           <div className="shipping-inner row">
             <div className="heading col-lg-3 col-12 text-center text-lg-left">
               <h2>Why choose us?</h2>
@@ -102,10 +106,10 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="category-banner-block">
-          <div className="section_title">top categories</div>
+          <div className="section_title">Don't be slow! Our prices are low.</div>
           <div className="row">
             <CategoryCard
               captain="Del Monte Beets"
@@ -117,7 +121,7 @@ const HomePage = () => {
               <div className="product-thumb transition text-center">
                 <div className="caption categoryname">
                   <h4>
-                    <a href="category_page.html">Veggies</a>
+                    <a href="category_page.html">Medicine</a>
                   </h4>
                 </div>
                 <div className="image">
@@ -136,7 +140,7 @@ const HomePage = () => {
               <div className="product-thumb transition text-center">
                 <div className="caption categoryname">
                   <h4>
-                    <a href="category_page.html">Del Monte Corn</a>
+                    <a href="category_page.html">Medicine</a>
                   </h4>
                 </div>
                 <div className="image">
@@ -155,7 +159,7 @@ const HomePage = () => {
               <div className="product-thumb transition text-center">
                 <div className="caption categoryname">
                   <h4>
-                    <a href="category_page.html">Riced cauliflower</a>
+                    <a href="category_page.html">Medicine</a>
                   </h4>
                 </div>
                 <div className="image">
@@ -174,7 +178,7 @@ const HomePage = () => {
               <div className="product-thumb transition text-center">
                 <div className="caption categoryname">
                   <h4>
-                    <a href="category_page.html">Veggies Bowl</a>
+                    <a href="category_page.html">Medicine</a>
                   </h4>
                 </div>
                 <div className="image">
@@ -193,7 +197,7 @@ const HomePage = () => {
               <div className="product-thumb transition text-center">
                 <div className="caption categoryname">
                   <h4>
-                    <a href="category_page.html">Green peas | Carrots</a>
+                    <a href="category_page.html">Medicine</a>
                   </h4>
                 </div>
                 <div className="image">
@@ -214,7 +218,7 @@ const HomePage = () => {
         <div className="category_product section">
           <div className="row">
             <div className="col-12">
-              <div className="section_title">Vegetables store</div>
+              <div className="section_title">Shop By Categories</div>
             </div>
             <div className="col-sm-3 productcategory_thumb text-center mb-15">
               <img
@@ -391,7 +395,7 @@ const HomePage = () => {
                   <div className="product-details">
                     <div className="caption">
                       <h4>
-                        <a href="product_detail_page.html">pure-spice-3</a>
+                        <a href="product_detail_page.html">Medicines</a>
                       </h4>
                       <p className="price">
                         $7.25<span className="price-tax">Ex Tax: $7.25</span>
@@ -458,7 +462,7 @@ const HomePage = () => {
                   <div className="product-details">
                     <div className="caption">
                       <h4>
-                        <a href="product_detail_page.html">Orange</a>
+                        <a href="product_detail_page.html">Medicines</a>
                       </h4>
                       <p className="price">
                         $7.25<span className="price-tax">Ex Tax: $7.25</span>
@@ -525,7 +529,7 @@ const HomePage = () => {
                   <div className="product-details">
                     <div className="caption">
                       <h4>
-                        <a href="product_detail_page.html">Apple</a>
+                        <a href="product_detail_page.html">Medicines</a>
                       </h4>
                       <p className="price">
                         $7.25<span className="price-tax">Ex Tax: $7.25</span>
@@ -592,7 +596,7 @@ const HomePage = () => {
                   <div className="product-details">
                     <div className="caption">
                       <h4>
-                        <a href="product_detail_page.html">Strawberry</a>
+                        <a href="product_detail_page.html">Medicines</a>
                       </h4>
                       <p className="price">
                         $7.25<span className="price-tax">Ex Tax: $7.25</span>
@@ -659,7 +663,7 @@ const HomePage = () => {
                   <div className="product-details">
                     <div className="caption">
                       <h4>
-                        <a href="product_detail_page.html">Lentilles</a>
+                        <a href="product_detail_page.html">Medicines</a>
                       </h4>
                       <p className="price">
                         $7.25<span className="price-tax">Ex Tax: $7.25</span>
@@ -702,6 +706,13 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        <div className="featured_product section mt-30">
+        <BookOnline/>
+        </div>
+        <div className="featured_product section mt-30">
+        <img src="/Ayurveda2.webp"/>
+        </div>
+        {/* <TestimonialCard/> */}
       </div>
     </React.Fragment>
   );
